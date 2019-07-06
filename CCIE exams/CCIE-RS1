@@ -1,0 +1,509 @@
+markmark1、Which two statement correctly describe MLD snooping? (Choose two)
+It is independent of IGMP snooping.
+VLAN query values override global values.
+It can be disabled globally and then enabled on individual VLANs Global configuration override VLAN configurations.
+It can be enabled on VLAN1 through 1001 only
+markmark2、Which information is contained in a OSPF Type 7 Not-So-Stubby-Area NSSA External LSA?
+The paths and costs to all OSPF NSSA areas that are external to the current area.
+External network address, mask, and cost to reach each network that is external to the OSPF domain and only within the NSSA.
+The paths and costs to reach other stub area border routers in the OSPF routing domain
+The address of routers that connect the current area to other areas and the cost to reach those routers.
+ The external network address, mask and cost to reach networks that are external to the OSPF NSSA, including the default route.
+markmark3、Which two options are interface requirements for turbo flooding? (Choose two)
+The interface is configured for ARPA encapsulation（接口配置为ARP封装）
+The interface is PPP
+The interface is Ethernet
+The interface is configured for GRE encapsulation
+The interface is configured for 802.1Q encapsulation
+IP Application Services Configuration Guide, Cisco IOS Release 12.2SX - Configuring IPv4 Broadcast Packet Handling [Cisco IOS Software Releases 12.2 SX]
+markmark4、When the BGP additional-paths feature is used, what allows a BGP speaker to differentiate between the different available paths?
+The remote BGP peer prepends its own next-hop address to the prefix
+A route distinguisher is appended to the prefix by the receiving BGP speaker.
+The additional path information is encoded in an extended community.
+A unique path identifier is encoded into a dedicated field to the NLRI
+markmark5、Which extended ping IP header option allows you to specify one more hops over which the packets will travel without specifying the full path?
+verbose  （Verbose is automatically selected along with any other option.）
+loose      （Loose allows you to influence the path by specifying the address(es) of the hop(s) you want the packet to go through.）
+strict         (Strict is used to specify the hop(s) that you want the packet to go through, but no other hop(s) are allowed to be visited.
+record       (Record is a very useful option because it displays the address(es) of the hops (up to nine) the packet goes through.)
+markmark6、Which statement about the BGP scope of the cost community is true?#下列关于BGP范围共同体开销的说法正确的是？
+It is shared with IBGP neighbors only.
+It is shared with IBGP neighbors and route reflectors.
+It is shared with EBGP neighbors only.
+It is shared with IBGP and EBGP neighbors.
+It is shared with IBGP and Confederation peers. （IBGP和联盟邻居）
+markmark7、Which two factors contribute to traffic starvation when TCP and UDP flows area includes in a single traffic class? (Choose two)#当TCP和UDP流区域包含在一个流量类中时，以下哪些两个因素有助于缓解流量拥塞？
+UDP flows continually lower their transmission rates when congestion is detected.
+TCP flows continually lower their transmission rates when congestion occurs on a link. #当链路发生拥塞时，TCP流不断降低其传输速率
+TCP flows continually reduce the windows size when congestion occurs on a link
+UDP flows continually reduce the windows size when congestion occurs on a link.
+TCP flows maintain a consistence transmission rate when congestion occurs on a link.
+UDP flows maintain a consistence transmission rate when congestion occurs on a link.#当链路上发生拥塞时，UDP流保持一致传输速率
+markmark8、Which two statements about OSPFv3 are true (Choose two) ?#以下关于OSPFv3的说法哪个两个是正确的？
+It supports unicast address families for IPv4 and IPv6 #它支持IPv4和IPv6单播地址簇
+It supports unicast address families for IPv6 only
+It supports only one address family per instance.#它每个实例仅支持一个地址簇
+It supports the use of a cluster ID for loop prevention.
+It supports multicast address families for IPv4 and IPv6 It supports multicast address families for IPv6 only.
+markmark9、How is the MRU for a multilink bundle determined?#如何确定多链路捆绑的MRU？
+It is negotiated by LCP. #由LCP协商
+It is manually configured on the multilink bundle.
+It is manually configured on all physical interface of a multilink bundle.
+It is negotiated by NCP.
+It is negotiated by IPCP.
+markmark10、What is the reason to send EIGRP SIA reply to a peer?#将EIGRP SIA回复发送给对等方的原因是什么
+to respond to an SIA query that the router is still waiting on replies from its peers. #为了响应路由器仍在等待来自其对等端回复的SIA查询
+to respond to a reply reporting that the prefix has gone stuck-in-active.
+to respond to a query reporting that the prefix has gone stuck-in-active
+to respond to an SIA query with the alternative path requested.
+markmark11、Which two statements about IGPs are true?(Choose two)#以下关于IGPs的说法哪两个是正确的？
+IS-IS and EIGRP are link-state protocols
+OSPF and IS-IS are classless protocols  #无类协议
+RIPv2 and IS-IS calculate the metric of a link based on the bandwidth of a link.
+OSPF and EIGRP have high resource usage.
+RIPv2 and EIGRP support VLSM.
+RIPv2 and OSPF are distance vector protocols
+markmark12、Which two statements about HDLC operations in asynchronous balanced mode are true? (Choose two)#以下关于在异步平衡方式中 HDLC 操作的说法正确的是哪两个？
+The initiating device sends a DTE frame
+Either device can send frames at any time
+Each device must negotiate with its neighbors before sending frames
+Each device must negotiate with its neighbors to recover from framing errors.
+Either device can imitate transmission of frames.#模仿帧的传输
+markmark13、Refers to exhibit, if a layer 3 switch running OSPF in a VRF-lite this error, which action can you take to correct the problem?#参考示例，如果一个3层交换机在VRF-lite中运行OSPF出现此错误，您可以采取哪个措施来纠正该问题？
+此处原题库也是没图的
+set mls cef maximum-routes in the global configuration
+Add the vrf-lite capability to the OSPF configuration.
+upgrade the layer 3 switch to a model that can support more routes
+Configure the control plane with a larger memory allocation to support the Cisco Express Forwarding Information Base
+markmark14、Which two statement about GLBP are true? (Choose two)#以下关于GLBP的说法哪两个是正确的？
+Each GLBP group supports up 4 to MAC addresses.
+It uses Hello, Request, and Reply packet types.
+It allows members to elect up to two gateways as the AVG.
+It communicate to multicast address 224.0.0.18
+It supports stateful switchover.
+markmark15、Which two statements about the EIGRP over the top feature are true? (Choose two)#以下关于EIGRP over the top 特性的说法哪两个是正确的？
+EIGRP routers traffic between the PE devices
+Traffic is LISP-encapsulated on the control plan.
+The neighbor command must be configured with LISP encapsulation on each CE device.
+The network statement must be configured on each PE device to connect separate EIGRP sites.
+Traffic is LISP-encapsulated on the data plan
+markmark16、Which option describes how a router responds if LSA throttling is configured and it receives the identical LSA before the interval is set?#哪个选项描述了如果配置了LSA限制，路由器如何响应，并且在设置间隔之前接收到相同的LSA？
+The LSA is added to the OSPF database and a notification is sent to the sending router to slow down its LSA packet updates.
+The LSA is added to the OSPF database.
+The LSA is ignored.
+The LSA is ignored and a notification is sent to the sending router to slow down its LSA packet updates
+markmark17、Refer to the exhibit, which statement about the 192.168.100.0/24 destination network is true?#请参阅图示，关于192.168.100.0/24目标网络的说法哪个是正确的？
+图片: https://uploader.shimo.im/f/TQ7GQivs5pMyyzGz.png
+The Reported Distance for the Successor is 128256.
+The Reported Distance for the Feasible Successor is 409600.
+The metric installed into the route table is 128256.
+The metric installed into the route table is 435200.
+markmark18、Refer to the exhibit. Which two statements about the output are true? (2)#请参阅图示，关于输出的说法哪两个是正确的？
+图片: https://uploader.shimo.im/f/v1HnAQpFBv4n0C8s.png
+Setting the priority of this switch to 0 for VLAN 1 would cause it to become the new root 802.1w spanning-tree is being used
+This switch is the root bridge for VLAN 1
+Spanning-tree PortFast should not be enabled on GigabitEthernet2/1
+Spanning-tree PortFast is enabled on GigabitEthernet1/1
+markmark19、Which command can you enter to set a default route match tag for internal EIGRP routes?#您可以输入哪个命令来为内部EIGRP路由设置默认路由匹配标记？
+match-tag list EIGRP_Default
+eigrp route-tag 25.25.25.25
+route-map EGIRP 25
+eigrp default-route-tag 25.25.25.25
+markmark20、What are two features that distance-vector routing protocols can use to address the count-to-infinity problems? (Choose two)#距离矢量路由协议可用于解决计数到无穷大问题的两个特征是什么？
+Split horizon #水平分割
+adjacency dead timers.
+route tagging
+triggerd updates
+route poisoning #路由毒化
+markmark21、Which statement about the bgp soft-reconfig-backup command is true?#关于bgp soft-reconfig-backup命令说法正确的是？
+It provides soft configuration capabilities for peers that are unable to support route refresh. #它为无法支持路由刷新的对等体提供软配置功能
+When the peer is unable to store updates, the updates are implemented immediately.
+It overrides soft reconfiguration for devices that support inbound soft reconfiguration
+It requires BGP to store all inbound and outbound updates.
+It provides outbound soft reconfiguration for peers.
+markmark22、Which DHCP message type does the DHCP server to confirm its allocated IP address?#DHCP Server 使用哪种类型的DHCP消息来确认其分配的IP地址？
+DHCPDISCOVER
+DHCPOFFER
+DHCP ACK
+DHCPREQUEST
+markmark23、Which two statement about IS-IS authentication are true?(Choose two)#以下关于IS-IS认证的说法哪两个是正确的？
+Level 1 LSPs use the domain password.
+Area and domain authentication must be configured together.
+Level 2 LSPs transmit the password encrypted inside the IS-IS PDU.
+If LSP authentication is in use, unauthorized devices can form neighbor adjacencies.
+Password can be configured on a per-interface basis.
+markmark24、When you implement CoPP on your network, what is its default action?#当你在网络上实施部署CoPP时，其默认操作是什么？
+Drop management ingress traffic to the control plane.
+Monitor ingress and egress traffic to the control plane by using access groups that are applied to the interface
+Block all traffic
+Rate-limit bidirectional traffic to the control plane
+Permit all traffic
+markmark25、Which two statement about VTPv3 are true? (choose two)#以下关于VTPv3的说法哪两个是正确的？
+Extended VLANs prevent VTPv3 switches from becoming VTPv2.
+VTPv3 must receive VTPv2 packets before it can send VTPv2 packets.
+VTPv3 accepts configuration information only from VTPv2 devices
+VTPv3 sends VTPv2 packets when they are detected on a trunk port.
+VTPv3 regions can communicate in server mode only over a VTPv2 region.
+markmark26、Which three statements about bridge assurance are true? (Choose three)#以下关于桥接assurance的说法哪三个是正确的？
+Bridge assurance must be enabled on both ends of a link.#必须在链路的两端启用网桥保证
+Bridge assurance can be enabled on one end of a link or on both ends.
+Bridge assurance is enabled on STP point-to-point links only.#仅在STP点到点链路上启用网桥保证
+Bridge assurance is enabled on STP multipoint links only.
+If a bridge assuance port fails to receive a BPDU after a timeout, the port is put into a blocking state.
+markmark27、Which two statements about Cisco IOS XE are true? (Choose two)#以下关于Cisco IOS XE的说法正确的是？
+Separate images are required for platform-dependent code.
+Its functions run as multiple separate processes in the OS.
+It uses a service blade outside Cisco IOS XE to intergrate and run application.
+It is deployed in a Linux-based environment.
+The FED feature provides separation between the control plane and the data plane
+markmark28、Refer to the exhibit, Which two actions can you take to allow the network 172.29.224.0/24 to be reachable from peer 192.168.250.53? (Choose two)#请参阅图示，您可以采取以下哪两个操作来允许对端192.168.250.53网络访问172.29.224.0/24？
+图片: https://uploader.shimo.im/f/gRE1xocXlPEr4iDr.png
+Modify the community list to match community 64513:64090 attached to 172.29.224.0/24
+Configure soft reconfiguration to peering 192.168.250.53
+Modify the outbound route map to permit all additional traffic.
+Configure additional address families to peering 192.168.250.53
+Modify the inbound route map to permit all additional traffic.
+markmark29、Which two commands should you enter to enable IP Source Guard with source IP and MAC address filtering? (Choose two)#您应该输入哪两个命令来过滤具有源IP和MAC地址的IP Source Guard？
+ip verify source tracking
+switchport port-security
+ip verify unicast source
+ip verify source （IP源防护）
+ip verify source port-security
+markmark30、Which two statements about root guard and loop guard are true?(Choose two)#以下关于根保护和防环的说法中哪两个是正确的？
+Root guard disables an interface only when a superior BPDU is received.
+Loop guard uses its own keepalives to determine unidirectional traffic
+When loop guard is enabled, the port is transitioned to the root-inconsistent state
+Loop guard uses its own keepalives to prevent loops by detecting failures.
+Loop guard uses BPDU keepalives to determine unidirectional traffic
+Root guard should be enabled on an upstream interface.
+markmark31、Which option describes how a vtpv3 device responds when it detects a VTPv2 device on a trunk port?#以下哪个选项描述了vtpv3设备在trunk端口上检测到VTPv2设备时如何响应的？
+It sends VTPv3 packets only.
+It sends VTPv2 packets only.
+It sends VTPv3 and VTPv2 packets
+It sends a special packet that contains VTPv3 and VTPv2 packet information.
+markmark32、Which two operating modes does VPLS support? (Choose two)#VPLS支持哪两种操作模式？
+transport mode
+strict mode
+port mode
+loose mode
+VLAN mode
+dynamic mode
+markmark33、What does the DIS on a LAN periodically transmit in multicast to ensure that the IS-IS link-state database is accurate?#什么使得LAN上的DIS定期以多播方式传输，以确保IS-IS链路状态数据库准确无误？
+ISH
+IIH
+CSNP
+PSNP
+LIP
+markmark34、Refer to the exhibit, Which two conclusions can you draw from this output? (Choose two)#请参阅图示，您可以从此输出中得出哪两个结论？
+图片: https://uploader.shimo.im/f/TVWLq6RCZHQi62BE.png
+The device that produced the output uses the same interface to send and receive traffic to and from the device at 10.9.132.254.
+The device at 192.168.5.119 is on the same subnet as the next hop for the device at 10.9.132.254.
+The device at the 192.168.5.119 routing table has an ARP entry for the device at 10.9.132.254.
+The device that produced the output uses different interfaces to send and receive traffic to and from the device at 10.9.132.254.
+The packet was source-routed
+markmark35、Which two statements about EIGRP load balancing are true ? (Choose two)#以下关于EIGRP负载均衡的说法哪两个是正确的？
+EIGRP supports 6 unequal-cost paths.
+A Path can be used for load balancing only if it is a feasible successor.
+EIGRP supports unequal-cost paths by default.
+Any path in the EIGRP topology table can be used for unequal-cost load balancing.
+Cisco Express Forwarding is required to load-balance across interfaces.
+markmark36、Refer to the Exhibit, If the RADIUS server is inaccessible, which password can be the user enters to access user mode during a telnet session?#请参阅图示，如果RADIUS服务器不可访问，在telnet会话期间用户可以用哪个密码进入用户视图模式？
+图片: https://uploader.shimo.im/f/yOympH3spX8KqvkB.png
+Cisco
+Cisco1
+Cisco2
+Cisco3
+Cisco4
+markmark37、Which two statements about CEF polarization are true? (Choose two)#以下关于CEF polarization的说法哪两个是正确的？
+The AND operation is performed on the higher-order bits of the source and destination IP address
+A single link is chosen for all flows
+The AND operation is performed on the lower-order bits of the source and destination IP address
+After the XOR process, the flow is processed in the distribution Layer with a different hashing algorithm.
+It can be prevented by alternating the hashing inputs.
+When enabled, it allows all links to be used efficiently for different traffic flows.
+markmark38、Which two statements are true about VPLS? (Choose two)#以下关于VPLS的说法哪两个是正确的？
+It can work over any transport that can forward IP packets.
+It can carry a single VLAN per VPLS instance.
+It provides integrated mechanisms to maintain First Hop Resiliency Protocol such as HSRP, VRRP, or GLBP.
+It includes automatic detection for multihoming.
+It relies on flooding to propagate MAC address reachability information.
+markmark39、Which two events occur when a packet is encapsulated in a GRE Tunnel? (Choose two)#当数据包封装在GRE隧道中时会发生哪两个事件？
+The TTL of the payload packet is decremented.
+The source IPv4 address in the IPv4 payload is used to forward the packet. The TTL of the payload packet is incremented.
+The version field in the GRE header is incremented.
+The GRE keepalive mechanism is reset.
+The destination IPv4 address in the IPv4 payload is used to forward the packet.
+markmark40、Refer to the exhibits, If you apply this configuration to a device on your network, which class map cannot match traffic?#请参阅图示，如果你将此配置应用于网络上的设备，则哪类映射无法匹配流量？
+图片: https://uploader.shimo.im/f/OiAovS2lznoxnaMY.png
+CM-EXMAPLE-1
+CM-EXMAPLE-2
+CM-EXMAPLE-3
+CM-EXMAPLE-4
+CM-EXMAPLE-5
+markmark41、Which three steps are required to enable SSH access on a Cisco router (Choose three)#在Cisco路由器上启用SSH访问需要三个步骤？
+Generating an RSA or DSA cryptographic key
+configuring the version of SSH
+configuring VTY lines for use with SSH
+configuring the port for SSH to listen for connection.
+configuring a domain name
+Generating an AES or SHA cryptographic key
+markmark42、Which three criteria are used for stackswise election of a master switch?#哪三个标准用于堆叠选择主交换机？
+VLAN revision number
+longest uptime
+lowest MAC address
+highest MAC address
+user-selected priority
+IOS version number
+markmark43、Refer to the exhibit, After you apply configurations to R1 and R2, which network does R2 advertise to R1?#请参阅图示，将配置应用于R1和R2后，R2将哪个网络通告给R1
+图片: https://uploader.shimo.im/f/SjiHM7vehokrEez8.png
+both 172.16.32.0/20 and 172.16.33.0/24
+172.16.32.0/20 only
+172.16.33.0/24 only
+172.16.0.0/16 only
+markmark44、What can PfR passive monitoring mode measure for UDP flows?#PfR被动监控模式可以监测UDP流量的什么？
+loss
+throughput
+reachability
+delay
+markmark45、Which two BGP attribute are optional, non-transitive attributes? (Choose two) #以下哪两个BGP属性是可选的，非传递属性？
+AS path
+local preference
+MED
+cluster list
+weight
+markmark46、Which two statement about IPv6 6to4 tunnel are true? (Choose two)#关于IPv6 6to4隧道的哪两个说法是正确的？
+Sites use addresses from link-local scope
+They are point-to-multipoint tunnels.
+They are point-to-point tunnels.
+Site use addresses from the 2002::/16 prefix
+They rely on GRE encapsulation
+markmark47、Which GDOI key is responsible for encrypting control plane traffic?#哪个GDOI密钥是负责加密控制平面流量？
+the traffic encryption key.
+the key encryption key.
+the preshared key
+the key-chain
+markmark48、Refer to the exhibits, Which statement is true?#请参阅图示，下列哪个说法是正确的？
+图片: https://uploader.shimo.im/f/FL4oZCGF0AAEYdtt.png
+BFD, SPF, and LSA timers are tuned for faster convergence
+Fast convergence is not configured
+Only BFD is enabled
+BDF and SPF throttling are configured
+markmark49、Which two methods are used to configure an RP in a PIM-SM network? (Choose two)#在PIM-SM网络中使用哪两种方法配置RP？
+BSR
+PIM-DM
+SSM
+Auto-RP
+anycast
+markmark50、Which two statements about VRF-lite are true?(choose two)#关于VRF-lite的说法哪两个是正确的？
+Multiple ISP customers can be supported on one customer edge device.
+An isolated VRF routing table is created for each VRF
+A single customer VRF can support overlapping IP addresses.
+Two or more VRFs can be assigned to a single Layer 3 interface.
+At least one physical interface must be configured to enable a VRF
+markmark51、Which two statements about IP SLA are true?(Choose two)#关于IP SLA的说法哪两个是正确的？
+SNMP access is not supported
+It is Layer 2 Transport-independent
+The IP SLA responder is a component in the source Cisco device.
+It can measure MOS
+It uses active traffic monitoring
+It uses NetFlow for passive traffic monitoring
+markmark52、Which type of IPv6 address is 2001:DB8::FFFF:FFFF/32?#哪种类型的IPv6 地址是2001:DB8::FFFF:FFFF/32？
+Multicast address
+host address
+broadcast address
+anycast address
+markmark53、Which two features are incompatible with Loop Guard on a port? (Choose two)#以下哪两个功能与端口上的Loop Guard不兼容？
+Root Guard
+UplinkFast
+Backbone Fast
+PortFast
+BPDU skew detection.
+markmark54、On a network using Diffser, Which option refers to the actions that applied to a packet as it moves through the network?#在使用Diffser的网络上，哪个选项是指在数据包通过网络时应用于数据包的操作？
+PHB
+Core-point
+IP-precedence
+DSCP
+markmark55、If running on OSPF process without the capability vrf-lite command in a VRF, which value does the router additionally check on an OSFP Type 3 LSA?#如果在VRF上没有使用vrf-lite命令的OSPF进程上运行，则路由器会在OSFP Type 3 LSA上检查哪个值？
+the MAX Age timer
+the DN bit
+the prefix length
+the tag
+markmark56、Which command can you enter to configure a Cisco Router running OSPF to propagate the static default route 0.0.0.0 0.0.0.0 172.31.15.1 within the OSPF process?#您可以输入哪个命令来配置运行OSPF的Cisco路由器在OSPF进程中传播静态默认路由0.0.0.0 0.0.0.0 172.31.15.1？
+redistribute static subnet
+default-information originate
+redistribute static metric 1 subnet
+redistribute static
+markmark57、Which traffic plane supports the TFTP and FTP protocols?#哪个流量平面支持TFTP和FTP协议
+Data Plane
+management plane
+control plane
+Service plane
+markmark58、Which three basic types of SD-WAN deployments are out on the market? (Choose three)#市面上有哪三种基本类型的SD-WAN部署？
+managed service SD-WAN
+Internet-based SD-WAN
+secure SD-WAN service
+policy-based SD-WAN
+SD-WAN as-a-Service
+MPLS-based
+markmark59、Which IS-IS router type can have neighbor in any area?#哪种类型的IS-IS路由器可以在任何区域中都有邻居？
+Both Level 1 intermediate Systems and Level 2 Intermediate System
+Level 2 Intermediate System only
+Level 1/Level 2 intermediate System only
+Both Level 1/ Level 2 Intermediate Systems and Level 2 Intermediate Systems.
+Level 1 Intermediate System only.
+markmark60、Which three connectivity models for vEdge Site Architecture are true? (Choose three)#vEdge站点架构的哪三种连接模型是正确的？
+hybrid with Fallback
+full Sd-WAN
+secure virtual connectivity
+augmentation model
+secure tunnel
+Cloud provider
+markmark61、Which are the three recommended steps to implement your Risk-Based IoT Security Program? (Choose three)#以下哪三个是实施Risk-Based物联网安全计划的建议步骤？
+Analyze
+Access
+Implement
+Troubleshoot
+Formalize
+Optimize
+markmark62、Which are two general SDN characteristic? (Choose two)#以下哪两个是SDN的普遍特征？
+Southbound interface are interfaces used between the control plane and the data plane
+The separation of the control plane from the data plane
+Northbound interfaces are open interface used between the control plane and the data plane
+OpenFlow is considered one of the first Northbound APIs used by SDN controllers.
+OVSDB is an application database management protocol
+markmark63、One your clients which is the manufacturer area is after a solution in order to manage all his fog nodes. Which management tool best suits his needs?#你的一个制造商领域的客户在解决方案之后为了管理他所有的fog node。下列哪种管理工具最适合他的需求？
+Cisco Prime Infrastructure
+Cisco Connected Grid Network Management System
+Cisco Fog Director
+Cisco Network Control System
+markmark64、Which three statement correctly describe the encoding used by NETCONF and RESTCONF? (Choose three)#以下哪三个说法正确描述了NETCONF和RESTCONF所使用的编码？
+RESTCONF uses XML-encoded data
+RESTCONF uses JSON-encoded data
+NETCONF uses XML-encoded data
+RESTCONF uses YAML-encoded data
+NETCONF uses JSON-encoded data
+NETCONF uses YAML-encoded data
+markmark65、Which three benefits of virtualizing the DMZ are true? (Choose three)#虚拟化DMZ有哪三个好处？
+analytics
+usage-based consumption model
+per-app network functions are operations.
+orchestration
+dynamic and automated service insertion with focus on security
+Service catalog
+markmark66、Refer to the exhibit, Each router is a PIM RP in its own domain and all routers are MSDP peers. When the multicast source in PIM Domain A begins sending traffic, which three messages do the routers send? (Choose three)#请参阅图示，每个路由器在其自己的域中是PIM RP，并且所有路由器都是MSDP对等体。当PIM域A中的组播源开始发送流量时，路由器发送哪三条消息？
+图片: https://uploader.shimo.im/f/yiGdoDtRiQUhULxd.png
+R2 sends an MSDP SA message.
+R2 sends a PIM (*,G) join message
+R1 sends an MSDP SA message.
+R1 sends a PIM (S,G) join message
+R1 sends a PIM (S,G) join message
+R2 sends a PIM (S,G) join message.
+markmark67、Refer to exhibit, After you configured DHCP snooping to block a rogue DHCP server from assigning IP address to devices on your network, you notice that all ports on the switch are still trusted. Which action can you take to correct the problem? Disable DHCP snooping on all VLANs#请参阅图示，在你配置DHCP snooping以阻止恶意DHCP服务器为网络上的设备分配IP地址后，您会注意到交换机上的所有端口仍然受信任。 您可以采取哪些措施来纠正问题？ 禁用所有VLAN上的DHCP Snooping
+Configure the ip dhcp snooping rate limited command to rate-limit the interface that connects to the rogue DHCP Server
+Remove the ip dhep snooping trust command from all interfaces on the switch except the interface that connects to the company DHCP server
+Disable DHCP snooping on VLAN 1 only
+markmark68、Refer to the exhibit, What is the reason that the two devices failed to form an EIGRP neighbor relationship?#请参阅图示，这两个设备未能形成EIGRP邻居关系的原因是什么？
+图片: https://uploader.shimo.im/f/dLrxzcobWnQedlnX.png
+The K-value are invalid
+The two devices have different key IDs
+The hold timers are mismatched
+The advertised MD5 digests do not match
+between the devices
+markmark69、Which two statements about migrating a network from PVST+ to MST are true? (Choose two)#以下关于将网络从PVST+ 迁移到MST说法正确的是哪两个？
+Switches migrated to MST will continues to interoperate with unmigrated switches.
+While the migration is underway, unmigrated switches treat migrated switches in the MST region as individual switches.
+Loop guard and BPDU filter are disabled automatically during the migration.
+Before migrating to MST, all PVST+ switches must first be migrated to Rapid-PVST+
+Root Guard and BPDU Guard will be unaffected by the migration.
+markmark70、Which is the correct multicast destination address for IGMPv2 leave-group message?#哪个是IGMPv2离开组消息的正确多播目标地址？
+224.0.0.1
+239.0.0.2
+239.0.0.1
+224.0.0.2
+markmark71、In a GETVPN environment, which protocol used by the key server and group members to manage group keys?#在GETVPN环境中，密钥服务器和组成员使用哪种协议来管理组密钥？
+STP
+FTP
+SSH
+SFTP
+GDOI
+SNMP
+markmark72、Which two statements about Netflow version 9 are true ?( Choose two)#以下关于Netflow version 9的说法哪两个是正确的？
+It up to six exporters per cache
+It supports both encryption and authentication.
+Each flow monitor supports up to 10 exporters
+It supports export over TCP and UDP.
+It supports export over UDP only
+It supports up to two exporters per cache.
+markmark73、Refer to the exhibit. When you apply this configuration to the router, which effect is true?#请参见图示。当你将此配置应用于路由器时，哪种效果是对的？
+图片: https://uploader.shimo.im/f/yxXNPBJUfwggrsee.png
+The router sends hello packets to neighbor 192.168.35.3 via unicast
+The router broadcasts hello packets via interface F0/0
+The router stops sending hello packets to neighbor 192.168.35.3
+The router multicasts hello packets via interface F0/0
+markmark74、Which two statements about debugging on Cisco router are true?(Choose two)#以下关于Cisco路由器调试的说法哪两个是正确的？
+The debug ip packet command can debug IP traffic that is fast-switched on the router.
+The debug command can be run in privileged exec mode only
+The terminal monitor command copies debug output to the terminal
+The debug command can be run in user exec mode
+By default, the router logs debug command output to vty lines.
+Using console logging can reduce the performance impact of the debug command.
+markmark75、What is the default behavior for a manual summary route when a component route of the summary disappears?#当摘要的组件路径消失时，手动汇总路由的默认行为是什么？
+If the component route previously had the best composite metric, the same summary metric is retained for stability.
+Regardless of the metric of the component route, the metric of the summary metric is updated, and updates are sent to peers.
+If the component route previously did not have the best composite metric, the summary metric is updated, and updates are sent to peers.
+If the component route previously had the best composite metric, the metric of the summary changes to the next-best composite metric.
+markmark76、How does a router in an MPLS environment handle a packet whose label stack has a depth of 0?#MPLS环境中的路由器如何处理标签堆栈深度为0的数据包？
+It uses IP routing to forward the packets
+It applies a label of the packet and forwards it out all Layer 3 interfaces.
+It queues the packet for later transmission.
+It discards the packet
+markmark77、In the DMVPN topology, which value can be used to authentication spoke routers to the hub?#在DMVPN拓扑中，哪个值可用于spoke routers到hub的验证？
+username
+pre-shared key
+IP address
+hostname
+markmark78、Which description correctly describes Git?#以下哪个描述正确描述了Git？
+Git is a version control system for tracking changes files
+Git is s web-based repository for sharing files
+Git is a configuration management tool that automates provisioning
+Git is a commend-line utility for creating archives of files.
+markmark79、Which three campus fabric nodes in SD-Access architecture are true? (Choose three)#在SD-Access架构中以下哪三个园区结构节点是对的？
+virtual edge nodes
+fabric wireless access point
+data plane nodes
+fabric boarder nodes
+fabric edge nodes
+control plane nodes
+markmark80、Which statement correctly describes Ansible operations and playbooks?#以下哪个说法正确描述了Ansible操作和playbooks？
+Ansible is agent-based and uses playbooks formatted in YAML
+Ansible is agentless and uses playbooks formatted in XML
+Ansible is agentless and uses playbooks formatted in YAML
+Ansible is agent-based and uses playbooks formatted in XML
+markmark81、Refer to the exhibit, You are configuring Router 1 and Router 2 for L2TPv3 tunneling. Which two additional configurations are required to enable Router1 and Router2 to establish the tunnel? (Choose two)#请参阅图示，您正在为L2TPv3隧道配置路由器1和路由器2。以下哪两个附加配置需要Router1和Router2建立隧道？
+图片: https://uploader.shimo.im/f/RjvRVlNVn0Ei762k.png
+Cisco Express Forwarding must be disabled on Router 1
+Router 1 must be configured to encapsulate traffic by using L2Tpv3 under the pseudowire-class R1toR2
+Cisco Discovery Protocol must be enabled on interface FastEthernet1/0 on Router 1
+An IP address must be configured on interface FastEthernet1/0 on Router 1
+Loopback 0 on Router 1 must be advertised to Router 2
+markmark82、Which neighbor-discovery message type is used to verify connectivity to a neighbor when the link-layer address of the neighbor is known? #当邻居的链路层地址已知时，使用哪种邻居发现消息类型来验证与邻居的连接？
+neighbor solicitation
+neighbor advertisement
+router advertisement
+router solicitation
+markmark83、Which mechanism does GET VPN use to preserve ip header information?#GET VPN使用哪种机制来保存ip包头信息？
+GRE
+MPLS
+IPSec transport mode
+IPSec tunnel mode
+markmark84、Which prefix list matches and permit all RFC 1918 network 10.0.0.0 routes that have mask of /16 through /24?#以下哪个前缀列表匹配并允许所有具有/ 16的掩码通过/ 24掩码的RFC 1918网络10.0.0.0路由
+ip prefix foo seq 10 permit 10.0.0.0/8 ge 16 le 24
+ip prefix foo seq 10 permit 10.0.0.0/16 le 24
+ip prefix foo seq 10 permit 10.0.0.0/8 ge 15 le 25
+ip prefix foo seq 10 permit 10.0.0.0/16 ge 15 le 25
+markmark85、Which Cisco PfR monitoring mode is recommended for Internet edge deployment?#建议将哪种Cisco PfR监控模式用于Internet边缘部署？
+Active mode
+passive mode
+fast mode
+active throughput mode
+markmark
